@@ -17,9 +17,17 @@
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>titanServlet</servlet-name>
+        <servlet-class>titanServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>titanServlet</servlet-name>
+        <url-pattern>/titanServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
