@@ -1,0 +1,63 @@
+/* 
+    Document   : base
+    Created on : Apr 2, 2011, 10:27:21 PM
+    Author     : Greg Bridle
+    Description: Base stylesheet for Titan web projects based on Java
+        
+*/
+
+html
+{
+    font:               normal 12px Tahoma;
+}
+
+body
+{
+    background:         url('/images/bg.png') repeat;
+    text-align:         center;
+    width:              100%;
+}
+.clear
+{
+    clear:              both;
+}
+.biginput
+{
+    font:               normal 18px;
+    height:             25px;
+    width:              200px;
+}
+.loginprompt
+{
+    border:             1px solid yellow;
+    float:              left;
+    height:             30px;
+    line-height:        30px;
+    text-align:         right;
+    width:              240px;
+}
+.logininput
+{
+    border:             1px solid red;
+    float:              left;
+    height:             30px;
+    line-height:        30px;
+    width:              240px;
+}
+.loginbreak
+{
+    float:              left;
+    line-height:        10px;
+    width:              500px;
+}
+div#container
+{
+    border:             1px solid blue;
+    margin:             0 auto;
+    text-align:         left;
+    width:              500px;
+}
+#logo
+{
+    background-image:   url('/images/logo.png');
+}
