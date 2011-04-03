@@ -9,58 +9,58 @@
 
     <body>
 
-        <div id="container">
+        <div id="container" style="">
 
             <div id="logo"></div>
-            <div id="loginbox">
+            <div id="loginbox" class="shadow">
 
-                <div class="loginprompt" style="margin-top: 20px;">
-                    Code:
-                </div>
-                <div class="logininput" style="margin-top: 20px;">
-                    <input type="text" name="code" id="code" class="biginput" />
-                </div>
+                <!-- Spacer Div -->
+                <div style="margin-top: 30px;"></div>
 
-                <div class="loginbreak"></div>
-
-                <div class="loginprompt">
-                    Username:
-                </div>
-                <div class="logininput">
-                    <input type="text" name="loginid" id="loginid" class="biginput" />
+                <!-- Login Code -->
+                <div class="prompt">Code:</div>
+                <div class="input">
+                    <input type="text" id="code" name="code" class="inputbox" />
                 </div>
 
-                <div class="loginbreak"></div>
-
-                <div class="loginprompt">
-                    Password:
-                </div>
-                <div class="logininput">
-                    <input type="password" name="password" id="password" class="biginput" />
+                <!-- Username -->
+                <div class="prompt">Username:</div>
+                <div class="input">
+                    <input type="text" id="username" name="username" class="inputbox" />
                 </div>
 
-                <div class="loginbreak"></div>
-
-                <div class="loginprompt">
-                    <input type="checkbox" name="rememberme" id="rememberme" />
-                </div>
-                <div class="logininput">
-                    Remember me
+                <!-- Password -->
+                <div class="prompt">Password:</div>
+                <div class="input">
+                    <input type="password" id="password" name="password" class="inputbox" />
                 </div>
 
-                <div class="loginprompt">
-                    &nbsp;
+                <!-- Login options -->
+                <div class="options">
+                    <div style="margin: 0px;">
+                        <input type="checkbox" id="remember">Remember Me
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <a href="forgotpassword.html">Forgot your password?</a>
+                    </div>
                 </div>
-                <div class="logininput">
-                    Forgot your password?
+                <div class="button">
+                    <input type="button" id="loginsubmit" value="Login" class="button" />
                 </div>
-
-                <div class="clear"></div>
 
             </div>
+
+            <div class="clear"></div>
 
         </div>
 
     </body>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    //Set the input focus to the code field
+    document.getElementById('code').focus();
+    //]]>
+    </script>
 
 </html>
