@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+    <head>
+
+        <title>Titan Shift Manager - Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/base.css"/>
+
+        <!-- Sam Skin CSS for TabView -->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/tabview/assets/skins/sam/tabview.css">
+
+        <!-- JavaScript Dependencies for Tabview: -->
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/element/element-min.js"></script>
+
+        <!-- Source file for TabView -->
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/tabview/tabview-min.js"></script>
+
+        <style>
+        /* Override styles for the YUI Tab Control */
+        #content-explorer
+        {
+            padding-top:        20px;
+            width:              880px;
+            line-height:        normal;
+        }
+        #content-explorer ul
+        {
+            border-bottom:      1px solid gray;
+            padding:            10px 10px 0;
+            list-style:         none;
+            max-width:          770px;
+/*            background: url(images/menu_bg.gif) bottom repeat-x;*/
+            height:             31px;
+        }
+        #content-explorer ul li
+        {
+            background:         #EEE;
+            float:              left;
+/*            background: url(images/right.gif) right top no-repeat;*/
+            text-align:         center;
+            text-transform:     uppercase;
+            overflow:           hidden;
+            margin-left:        5px;
+        }
+        #content-explorer ul li a
+        {
+            display:            block;
+/*            background: url(images/left.gif) left top no-repeat;*/
+            padding:            10px 20px 6px 20px;
+            font-weight:        bold;
+            color:              #999;
+        }
+        #content-explorer ul li a:hover
+        {
+            color:              #000;
+        }
+        #content-explorer ul li.selected
+        {
+/*            background: url(images/right_cur.gif) right top no-repeat;*/
+            border-left:        2px solid gray;
+            border-top:         2px solid gray;
+            border-right:       1px solid gray;
+        }
+        #content-explorer ul li.selected a
+        {
+/*            background: url(images/left_cur.gif) left top no-repeat;*/
+            background:         white;
+            color:              gray;
+            padding-bottom:     8px;
+        }
+        div.yui-content
+        {
+            overflow:           auto;
+            padding:            20px;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="container" style="margin-top: 50px; width: 900px;">
+
+            <div id="logo"></div>
+            <div id="mainpanel" class="shadow" style="background: white; float: left; height: 400px; width: 900px;">
+
+                <!-- Tab Selectors -->
+                <div id="content-explorer" style="float: left; margin: 10px 0px 0px 10px; width: 100%">
+                    <ul class="yui-nav">
+                        <li class="selected"><a href="#tab1"><em>My Inbox</em></a></li>
+                        <li><a href="#tab2"><em>My Availability</em></a></li>
+                        <li><a href="#tab3"><em>My Schedule</em></a></li>
+                    </ul>
+                    <div class="yui-content" style="float: left; width: 840px;">
+                        <div>
+                            <div style="border-bottom: 1px solid gray; float: left; height: 60px;">
+                                <div style="float: left; height: 45px; width: 45px;">
+                                    <img src="images/profile_missing.png" />
+                                </div>
+                                <div style="color: black; float: left; font: bold 32px Tahoma; height: 45px; padding-left: 20px; width: 300px;">
+                                    John Doe
+                                </div>
+                                <div style="border: 1px solid gray; color: gray; float: left; font: normal 12px Tahoma; height: 45px; line-height: 45px; padding-left: 20px; width: 400px;">
+                                    It's going to be a fun week.... I promise c ya soon guyz !!!
+                                </div>
+                            </div>
+                            <div style="border-bottom: 1px solid gray; float: left; height: 100px; width: 100%;">
+                                <div style="float: left;">
+                                    <div style="color: black; float: left; font: normal 22px Tahoma; padding: 10px 0px 5px 0px; text-transform: uppercase; width: 100%;">my inbox</div>
+                                    <div style="color: gray; float: left; font: normal 12px Tahoma;">
+                                        View posts and important news flashes going on at your job<br/>
+                                        Stay updated 4/7<br/>
+                                        View Co workers status.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div><p>Tab Two Content</p></div>
+                        <div><p>Tab Three Content</p></div>
+                    </div>
+                </div>
+
+                <a href="javascript:location.reload(true)">Refresh this page</a>
+
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    // Generate a set of tabs to use
+    var myTabs = new YAHOO.widget.TabView("content-explorer");
+    //]]>
+    </script>
+
+</html>
