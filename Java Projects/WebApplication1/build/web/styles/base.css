@@ -83,7 +83,7 @@ div#loginbox .inputbox
 div#loginbox .options
 {
     float:              left;
-    margin:             0px 0px 10px 150;
+    margin:             0px 0px 10px 150px;
     width:              225px;
 }
 div#loginbox div.button
@@ -108,4 +108,57 @@ div#loginbox input.button
     -ms-filter:         "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
     /* For IE 5.5 - 7 */
     filter:             progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+div#messagelist
+{
+    float:              left;
+    width:              550px;
+}
+div.messagedetail
+{
+    background:         #EEE;
+    border:             1px solid gray;
+    float:              left;
+    height:             80px;
+    margin-top:         10px;
+    overflow:           hidden;
+    width:              520px;
+}
+div.messagedetail div.messagephoto
+{
+    float:              left;
+    height:             45px;
+    padding:            10px;
+    width:              45px;
+}
+div.messagedetail div.messagesender
+{
+    color:              gray;
+    float:              left;
+    font:               bold 14px Tahoma;
+    height:             25px;
+    line-height:        25px;
+    margin-top:         10px;
+    width:              300px;
+}
+div.messagedetail div.messagedate
+{
+    color:              gray;
+    float:              left;
+    font:               normal 12px Tahoma;
+    height:             25px;
+    line-height:        25px;
+    margin-top:         10px;
+    text-align:         right;
+    width:              145px;
+}
+div.messagedetail div.messagetext
+{
+    color:              gray;
+    float:              left;
+    font:               normal 12px Tahoma;
+    height:             25px;
+    margin-bottom:      10px;
+    width:              445px;
 }
