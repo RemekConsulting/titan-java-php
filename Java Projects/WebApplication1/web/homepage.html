@@ -29,9 +29,9 @@
         }
         #content-explorer ul
         {
+            padding:            10px 20px 0;
+            border-bottom:      1px solid #9ca9b2;
 /*
-            border-bottom:      1px solid gray;
-            padding:            10px 10px 0;
             list-style:         none;
             max-width:          840px;
             height:             31px;
@@ -51,6 +51,8 @@
         }
         #content-explorer ul li a
         {
+            background:         #eee;
+            color:              #666;
 /*
             display:            block;
             padding:            10px 20px 6px 20px;
@@ -72,11 +74,11 @@
             border-right:       1px solid gray;
 */
         }
-        #content-explorer ul li.selected a
+        #content-explorer ul li.selected a, #content-explorer ul li a:hover
         {
-/*
             background:         white;
-            color:              gray;
+            color:              #666;
+/*
             padding-bottom:     8px;
 */
         }
@@ -148,15 +150,15 @@
 
         <div id="container" style="margin-top: 50px; width: 900px;">
 
-            <div id="logo" style="width: 750px;"></div>
-            <div id="login" style="float: left; text-align: right; width: 150px;">
+            <div id="logo" style="width: 700px;"></div>
+            <div id="login" style="float: left; margin-top: 20px; text-align: right; width: 150px;">
                 <a href="account.html">ACCOUNT</a>&nbsp;|&nbsp;<a href="index.html">LOGOUT</a>
             </div>
 
-            <div id="mainpanel" class="shadow" style="background: white; float: left; width: 900px;">
+            <div id="mainpanel" style="background: white; float: left; width: 900px;">
 
                 <!-- Tab Selectors -->
-                <div id="content-explorer" style="float: left; margin: 10px 0px 0px 10px; width: 890px;">
+                <div id="content-explorer" style="float: left; margin: 10px 0px 0px 10px; width: 860px;">
                     <ul class="yui-nav">
                         <li class="selected"><a href="#tab1"><em>My Inbox</em></a></li>
                         <li><a href="#tab2"><em>My Availability</em></a></li>
@@ -183,7 +185,7 @@
                                 <div style="border-top: 1px solid gray; float: left; height: 100px; margin-top: 10px; width: 520px;">
                                     <div style="float: left;">
                                         <div style="color: black; float: left; font: normal 22px Tahoma; padding: 10px 0px 5px 0px; text-transform: uppercase; width: 100%;">my inbox</div>
-                                        <div style="color: gray; float: left; font: normal 12px Tahoma;">
+                                        <div style="color: gray; float: left; font: normal 12px Tahoma; line-height: 1.6em;">
                                             View posts and important news flashes going on at your job<br/>
                                             Stay updated 4/7<br/>
                                             View Co workers status.
@@ -193,7 +195,7 @@
 
                             </div>
 
-                            <div style="border: 1px solid gray; color: gray; float: left; font: normal 12px Tahoma; height: 200px; padding: 20px; width: 248px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;">
+                            <div style="border: 1px solid gray; color: gray; float: left; font: normal 12px Tahoma; height: 200px; padding: 20px; width: 248px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; line-height: 1.6em;">
                                 SITE NAME<br/>
                                 IMPORTANT NEWS FLASH
                             </div>
@@ -201,7 +203,7 @@
                             <div style="background: url('images/gradient.png') repeat-x; border: 1px solid gray; color: gray; float: left; font: normal 12px Tahoma; height: 36px; margin-top: 10px; width: 100%;">
 
                             </div>
-                            <div style="background: #666; border: 1px solid #666; float: left; height: 12px; width: 100%;">
+                            <div style="background: #9ca9b2; border: 1px solid #666; float: left; height: 12px; width: 100%;">
 
                             </div>
 

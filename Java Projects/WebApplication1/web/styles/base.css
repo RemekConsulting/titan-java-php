@@ -33,7 +33,7 @@ a:hover
 div#container
 {
     margin:             0 auto;
-    margin-top:         150px;
+    margin-top:         100px;
     text-align:         left;
     width:              500px;
 }
@@ -42,17 +42,17 @@ div#logo
     background:         url('../images/logo.png') no-repeat;
     float:              left;
     height:             85px;
+    margin-left:        20px;
     width:              500px;
 }
 div#loginbox
 {
-    border:		1px solid gray;
-    background:         white;
+    background:         url('../images/login_bg.png') no-repeat;
     float:              left;
-    height:             250px;
+    height:             336px;
     margin:             0px;
     padding:            0px;
-    width:              500px;
+    width:              555px;
 }
 div#loginbox .prompt
 {
@@ -78,7 +78,7 @@ div#loginbox .inputbox
     color:              gray;
     font:               normal 20px Tahoma;
     height:             30px;
-    width:              335px;
+    width:              320px;
 }
 div#loginbox .options
 {
@@ -97,7 +97,7 @@ div#loginbox div.button
 div#loginbox input.button
 {
     height:             40px;
-    width:              110px;
+    width:              100px;
 }
 .shadow
 {
@@ -159,6 +159,7 @@ div.messagedetail div.messagetext
     float:              left;
     font:               normal 12px Tahoma;
     height:             25px;
+    line-height:        1.6em;
     margin-bottom:      10px;
     width:              445px;
 }
