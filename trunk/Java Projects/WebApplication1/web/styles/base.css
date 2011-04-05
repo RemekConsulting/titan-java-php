@@ -30,12 +30,25 @@ a:hover
 {
     clear:              both;
 }
-div#container
+div#logincontainer
 {
     margin:             0 auto;
     margin-top:         100px;
     text-align:         left;
     width:              500px;
+}
+div#container
+{
+    margin:             0 auto;
+    margin-top:         50px;
+    text-align:         left;
+    width:              900px;
+}
+div#mainpanel
+{
+    background:         white;
+    float:              left;
+    width:              900px;
 }
 div#logo
 {
@@ -43,7 +56,14 @@ div#logo
     float:              left;
     height:             85px;
     margin-left:        20px;
-    width:              500px;
+    width:              700px;
+}
+div#loginoptions
+{
+    float:              left;
+    margin-top:         20px;
+    text-align:         right;
+    width:              150px;
 }
 div#loginbox
 {
@@ -162,4 +182,86 @@ div.messagedetail div.messagetext
     line-height:        1.6em;
     margin-bottom:      10px;
     width:              445px;
+}
+div#personalinfo
+{
+    float:              left;
+    width:              550px;
+}
+div#personalinfo div#photo
+{
+    float:              left;
+    height:             45px;
+    width:              45px;
+}
+div#personalinfo div#name
+{
+    color:              black;
+    float:              left;
+    font:               bold 32px Tahoma;
+    height:             45px;
+    padding-left:       20px;
+    width:              450px;
+}
+div#personalinfo div#quote
+{
+    background:         url('../images/status_bg.jpg') no-repeat;
+    color:              gray;
+    float:              left;
+    font:               normal 12px Tahoma;
+    height:             38px;
+    line-height:        44px;
+    margin-left:        65px;
+    padding-left:       20px;
+    width:              445px;
+}
+
+/* Override styles for the YUI Tab Control */
+#content-explorer
+{
+    float:              left;
+    margin:             10px 0px 0px 10px;
+    width:              860px;
+}
+#content-explorer ul
+{
+    padding:            10px 20px 0;
+    border-bottom:      1px solid lightgray;
+}
+#content-explorer ul li
+{
+    font:               normal 14px Tahoma;
+    text-transform:     uppercase;
+}
+#content-explorer ul li a
+{
+    background:         #eee;
+    color:              #666;
+}
+#content-explorer ul li.selected a, #content-explorer ul li a:hover
+{
+    background:         white;
+    color:              #666;
+}
+#content-explorer div.yui-content
+{
+    background:         white;
+    border:             none;
+    float:              left;
+    overflow:           auto;
+    padding:            20px;
+    width:              840px;
+}
+.yui-skin-sam .yui-navset .yui-content
+{
+}
+.yui-skin-sam .yui-navset .yui-nav .selected a
+{
+    border-left:        1px solid lightgray;
+    border-right:       1px solid lightgray;
+    border-top:         1px solid lightgray;
+}
+.yui-skin-sam .yui-navset .yui-nav .selected a em
+{
+    border-top:         1px solid lightgray;
 }

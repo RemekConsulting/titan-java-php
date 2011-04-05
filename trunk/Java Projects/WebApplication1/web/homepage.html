@@ -5,7 +5,6 @@
 
         <title>Titan Shift Manager - Home</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="styles/base.css" />
 
         <!-- Sam Skin CSS for TabView -->
         <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/tabview/assets/skins/sam/tabview.css" />
@@ -17,93 +16,52 @@
         <!-- Source file for TabView -->
         <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/tabview/tabview-min.js"></script>
 
-        <style type="text/css" >
-        /* Override styles for the YUI Tab Control */
-        #content-explorer ul
-        {
-            padding:            10px 20px 0;
-            border-bottom:      1px solid lightgray;
-        }
-        #content-explorer ul li
-        {
-            font:               normal 14px Tahoma;
-            text-transform:     uppercase;
-        }
-        #content-explorer ul li a
-        {
-            background:         #eee;
-            color:              #666;
-        }
-        #content-explorer ul li.selected a, #content-explorer ul li a:hover
-        {
-            background:         white;
-            color:              #666;
-        }
-        .yui-skin-sam .yui-navset .yui-content
-        {
-            border:             none;
-            background:         white;
-            overflow:           auto;
-            padding:            20px;
-        }
-        .yui-skin-sam .yui-navset .yui-nav .selected a
-        {
-            border-left:        1px solid lightgray;
-            border-right:       1px solid lightgray;
-            border-top:         1px solid lightgray;
-        }
-        .yui-skin-sam .yui-navset .yui-nav .selected a em
-        {
-            border-top:         1px solid lightgray;
-        }
-       </style>
+	<link rel="stylesheet" type="text/css" href="styles/base.css" />
 
     </head>
 
     <body class="yui-skin-sam">
 
-        <div id="container" style="margin-top: 50px; width: 900px;">
+        <div id="container">
 
-            <div id="logo" style="width: 700px;"></div>
-            <div id="login" style="float: left; margin-top: 20px; text-align: right; width: 150px;">
+            <div id="logo"></div>
+            <div id="loginoptions">
                 <a href="account.html">ACCOUNT</a>&nbsp;|&nbsp;<a href="index.html">LOGOUT</a>
             </div>
 
-            <div id="mainpanel" style="background: white; float: left; width: 900px;">
+            <div id="mainpanel">
 
                 <!-- Tab Selectors -->
-                <div id="content-explorer" style="float: left; margin: 10px 0px 0px 10px; width: 860px;">
+                <div id="content-explorer">
                     <ul class="yui-nav">
                         <li class="selected"><a href="#tab1"><em>My Inbox</em></a></li>
                         <li><a href="#tab2"><em>My Availability</em></a></li>
                         <li><a href="#tab3"><em>My Schedule</em></a></li>
                     </ul>
-                    <div class="yui-content" style="float: left; width: 840px;">
+                    <div class="yui-content">
 
                         <div>
 
-                            <div style="float: left; width: 550px;">
+                            <div id="personalinfo">
 
-                                <div style="float: left; height: 45px; width: 45px;">
+                                <div id="photo">
                                     <img src="images/profile_missing.png" alt="Missing Proile" />
                                 </div>
-                                <div style="color: black; float: left; font: bold 32px Tahoma; height: 45px; padding-left: 20px; width: 450px;">
+                                <div id="name">
                                     John Doe
                                 </div>
 
-                                <div style="background: url('images/status_bg.jpg') no-repeat; color: gray; float: left; font: normal 12px Tahoma; height: 38px; line-height: 44px; margin-left: 65px; padding-left: 20px; width: 445px;">
+                                <div id="quote">
                                     It's going to be a fun week.... I promise c ya soon guyz !!!
                                 </div>
 
                                 <div style="border-top: 1px solid lightgray; float: left; height: 100px; margin-top: 10px; width: 520px;">
-                                    <div style="float: left;">
-                                        <div style="color: black; float: left; font: normal 22px Tahoma; padding: 10px 0px 5px 0px; text-transform: uppercase; width: 100%;">my inbox</div>
+                                        <div id=""inbox">my inbox</div>
                                         <div style="color: gray; float: left; font: normal 12px Tahoma; line-height: 1.6em;">
                                             View posts and important news flashes going on at your job<br/>
                                             Stay updated 4/7<br/>
                                             View Co workers status.
                                         </div>
-                                    </div>
                                 </div>
 
                             </div>
@@ -184,7 +142,7 @@
 
                 </div>
 
-<!--                <a href="javascript:location.reload(true)">Refresh this page</a>-->
+                <a href="javascript:location.reload(true)">Refresh this page</a>
 
             </div>
 
