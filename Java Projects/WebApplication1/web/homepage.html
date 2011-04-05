@@ -19,68 +19,25 @@
 
         <style type="text/css" >
         /* Override styles for the YUI Tab Control */
-        #content-explorer
-        {
-/*
-            padding-top:        20px;
-            width:              880px;
-            line-height:        normal;
-*/
-        }
         #content-explorer ul
         {
             padding:            10px 20px 0;
-            border-bottom:      1px solid #9ca9b2;
-/*
-            list-style:         none;
-            max-width:          840px;
-            height:             31px;
-*/
+            border-bottom:      1px solid lightgray;
         }
         #content-explorer ul li
         {
             font:               normal 14px Tahoma;
             text-transform:     uppercase;
-/*
-            background:         #EEE;
-            float:              left;
-            text-align:         left;
-            overflow:           hidden;
-            margin-left:        5px;
-*/
         }
         #content-explorer ul li a
         {
             background:         #eee;
             color:              #666;
-/*
-            display:            block;
-            padding:            10px 20px 6px 20px;
-            font-weight:        bold;
-            color:              #999;
-*/
-        }
-        #content-explorer ul li a:hover
-        {
-/*
-            color:              #000;
-*/
-        }
-        #content-explorer ul li.selected
-        {
-/*
-            border-left:        1px solid gray;
-            border-top:         1px solid gray;
-            border-right:       1px solid gray;
-*/
         }
         #content-explorer ul li.selected a, #content-explorer ul li a:hover
         {
             background:         white;
             color:              #666;
-/*
-            padding-bottom:     8px;
-*/
         }
         .yui-skin-sam .yui-navset .yui-content
         {
@@ -89,60 +46,17 @@
             overflow:           auto;
             padding:            20px;
         }
-
-        .callout
+        .yui-skin-sam .yui-navset .yui-nav .selected a
         {
-            position:               relative;
-/*            margin:                 18px 0;*/
-/*            padding:                18px 20px;*/
-            /* easy rounded corners for modern browsers */
-            -moz-border-radius:     6px;
-            -webkit-border-radius:  6px;
-            border-radius:          6px;
+            border-left:        1px solid lightgray;
+            border-right:       1px solid lightgray;
+            border-top:         1px solid lightgray;
         }
-        .callout .notchbottom
+        .yui-skin-sam .yui-navset .yui-nav .selected a em
         {
-            position:               absolute;
-            top:                    -10px;
-            left:                   20px;
-            margin:                 0;
-            border-top:             0;
-            border-left:            10px solid transparent;
-            border-right:           10px solid transparent;
-            border-bottom:          10px solid #eee;
-            padding:                0;
-            width:                  0;
-            height:                 0;
-            /* ie6 height fix */
-            font-size:              0;
-            line-height:            0;
-             /* ie6 transparent fix */
-            _border-right-color:    pink;
-            _border-left-color:     pink;
-            _filter:                chroma(color=pink);
+            border-top:         1px solid lightgray;
         }
-        .callout .notchtop
-        {
-            position:               absolute;
-            top:                    -10px;
-            left:                   20px;
-            margin:                 0;
-            border-top:             0;
-            border-left:            10px solid transparent;
-            border-right:           10px solid transparent;
-            border-bottom:          10px solid #eee;
-            padding:                0;
-            width:                  0;
-            height:                 0;
-            /* ie6 height fix */
-            font-size:              0;
-            line-height:            0;
-             /* ie6 transparent fix */
-            _border-right-color:    pink;
-            _border-left-color:     pink;
-            _filter:                chroma(color=pink);
-        }
-        </style>
+       </style>
 
     </head>
 
@@ -177,12 +91,11 @@
                                     John Doe
                                 </div>
 
-                                <div class="callout" style="background-color: #eee; color: gray; float: left; font: normal 12px Tahoma; height: 35px; line-height: 35px; margin-left: 65px; padding-left: 20px; width: 420px;">
+                                <div style="background: url('images/status_bg.jpg') no-repeat; color: gray; float: left; font: normal 12px Tahoma; height: 38px; line-height: 44px; margin-left: 65px; padding-left: 20px; width: 445px;">
                                     It's going to be a fun week.... I promise c ya soon guyz !!!
-                                    <b class="notchtop"></b>
                                 </div>
 
-                                <div style="border-top: 1px solid gray; float: left; height: 100px; margin-top: 10px; width: 520px;">
+                                <div style="border-top: 1px solid lightgray; float: left; height: 100px; margin-top: 10px; width: 520px;">
                                     <div style="float: left;">
                                         <div style="color: black; float: left; font: normal 22px Tahoma; padding: 10px 0px 5px 0px; text-transform: uppercase; width: 100%;">my inbox</div>
                                         <div style="color: gray; float: left; font: normal 12px Tahoma; line-height: 1.6em;">
@@ -195,12 +108,12 @@
 
                             </div>
 
-                            <div style="border: 1px solid gray; color: gray; float: left; font: normal 12px Tahoma; height: 200px; padding: 20px; width: 248px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; line-height: 1.6em;">
+                            <div style="border: 1px solid lightgray; color: gray; float: left; font: normal 12px Tahoma; height: 200px; padding: 20px; width: 248px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; line-height: 1.6em;">
                                 SITE NAME<br/>
                                 IMPORTANT NEWS FLASH
                             </div>
 
-                            <div style="background: url('images/gradient.png') repeat-x; border: 1px solid gray; color: gray; float: left; font: normal 12px Tahoma; height: 36px; margin-top: 10px; width: 100%;">
+                            <div style="background: url('images/gradient.png') repeat-x; border: 1px solid lightgray; color: gray; float: left; font: normal 12px Tahoma; height: 36px; margin-top: 10px; width: 100%;">
 
                             </div>
                             <div style="background: #9ca9b2; border: 1px solid #666; float: left; height: 12px; width: 100%;">
@@ -271,7 +184,7 @@
 
                 </div>
 
-                <a href="javascript:location.reload(true)">Refresh this page</a>
+<!--                <a href="javascript:location.reload(true)">Refresh this page</a>-->
 
             </div>
 
