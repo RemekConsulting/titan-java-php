@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <title>Titan Shift Manager - Employee Scheduler</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="styles/base.css" />
+
+        <!-- Sam Skin CSS for TabView -->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/tabview/assets/skins/sam/tabview.css" />
+
+        <!-- JavaScript Dependencies for Tabview: -->
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/element/element-min.js"></script>
+
+        <!-- Source file for TabView -->
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/tabview/tabview-min.js"></script>
+
+        <style type="text/css" >
+        /* Override styles for the YUI Tab Control */
+        #content-explorer ul
+        {
+            padding:            10px 20px 0;
+            border-bottom:      1px solid lightgray;
+        }
+        #content-explorer ul li
+        {
+            font:               normal 14px Tahoma;
+            text-transform:     uppercase;
+        }
+        #content-explorer ul li a
+        {
+            background:         #eee;
+            color:              #666;
+        }
+        #content-explorer ul li.selected a, #content-explorer ul li a:hover
+        {
+            background:         white;
+            color:              #666;
+        }
+        .yui-skin-sam .yui-navset .yui-content
+        {
+            border:             none;
+            background:         white;
+            overflow:           auto;
+            padding:            20px;
+        }
+        .yui-skin-sam .yui-navset .yui-nav .selected a
+        {
+            border-left:        1px solid lightgray;
+            border-right:       1px solid lightgray;
+            border-top:         1px solid lightgray;
+        }
+        .yui-skin-sam .yui-navset .yui-nav .selected a em
+        {
+            border-top:         1px solid lightgray;
+        }
+        .ScheduleDate
+        {
+            font: bold 16px Tahoma;
+        }
+       </style>
+
+    </head>
+
+    <body class="yui-skin-sam">
+
+        <div id="container" style="margin-top: 50px; width: 900px;">
+
+            <div id="mainpanel" style="background: white; float: left; width: 900px;">
+
+                <!-- Tab Selectors -->
+                <div id="content-explorer" style="float: left; margin: 10px 0px 0px 10px; width: 839px;">
+
+                    <ul class="yui-nav">
+                        <li><a href="#tab1"><em>All Days</em></a></li>
+                        <li class="selected"><a href="#tab2"><em>Sunday</em></a></li>
+                        <li><a href="#tab3"><em>Monday</em></a></li>
+                        <li><a href="#tab4"><em>Tuesday</em></a></li>
+                        <li><a href="#tab5"><em>Wednesday</em></a></li>
+                        <li><a href="#tab6"><em>Thursday</em></a></li>
+                        <li><a href="#tab7"><em>Friday</em></a></li>
+                        <li><a href="#tab8"><em>Saturday</em></a></li>
+                    </ul>
+
+                    <div class="yui-content" style="float: left; width: 839px;">
+
+                        <div><p class="ScheduleDate">All Days</p></div>
+                        <div>
+                            <p class="ScheduleDate">Sunday 10th April, 2011</p>
+                            <div style="float: left; width: 800px;">
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">10:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">11:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">12:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">13:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">14:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">15:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">16:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">17:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">18:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">19:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">20:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">21:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">22:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">23:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">00:00</div>
+                                <div style="background: cornflowerblue; color: white; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 39px;">01:00</div>
+                                <div style="background: gainsboro; color: black; float: left; font: bold 14px Tahoma; margin-right: 1px; padding: 5px; text-align: left; width: 790px;">Manager</div>
+                                <div style="background: #EEE; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 400px;"><input type="text" style="color: #EEE; width: 390px;" value="Mgr" /></div>
+                                <div style="background: #EEE; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 378px;"><input type="text" style="color: #EEE; width: 368px;" value="Mgr" /></div>
+                                <div style="background: #CCB; color: black; float: left; font: bold 14px Tahoma; margin-right: 1px; padding: 5px; text-align: left; width: 790px;">Box Office</div>
+                                <div style="background: #FFE; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 400px;"><input type="text" style="color: #EEE; width: 390px;" value="Box Office" /></div>
+                                <div style="background: #FFE; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 378px;"><input type="text" style="color: #EEE; width: 368px;" value="Box Office" /></div>
+                                <div style="background: #FFE; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 378px;"><input type="text" style="color: #EEE; width: 368px;" value="Box Office" /></div>
+                                <div style="background: #FFE; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 400px;"><input type="text" style="color: #EEE; width: 390px;" value="Box Office" /></div>
+                                <div style="background: #BCC; color: black; float: left; font: bold 14px Tahoma; margin-right: 1px; padding: 5px; text-align: left; width: 790px;">Concessions</div>
+                                <div style="background: #EFF; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 400px;"><input type="text" style="color: #EEE; width: 390px;" value="Concessions" /></div>
+                                <div style="background: #EFF; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 378px;"><input type="text" style="color: #EEE; width: 368px;" value="Concessions" /></div>
+                                <div style="background: #EFF; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 378px;"><input type="text" style="color: #EEE; width: 368px;" value="Concessions" /></div>
+                                <div style="background: #EFF; color: black; float: left; font: bold 12px Tahoma; margin-right: 1px; padding: 5px; text-align: center; width: 400px;"><input type="text" style="color: #EEE; width: 390px;" value="Concessions" /></div>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div><p class="ScheduleDate">Monday 11th April, 2011</p></div>
+                        <div><p class="ScheduleDate">Tuesday 12th April, 2011</p></div>
+                        <div><p class="ScheduleDate">Wednesday 13th April, 2011</p></div>
+                        <div><p class="ScheduleDate">Thursday 14th April, 2011</p></div>
+                        <div><p class="ScheduleDate">Friday 15th April, 2011</p></div>
+                        <div><p class="ScheduleDate">Saturday 16th April, 2011</p></div>
+
+                    </div>
+
+                </div>
+
+<!--                <a href="javascript:location.reload(true)">Refresh this page</a>-->
+
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    // Generate a set of tabs to use
+    var myTabs = new YAHOO.widget.TabView("content-explorer");
+    //]]>
+    </script>
+
+</html>
